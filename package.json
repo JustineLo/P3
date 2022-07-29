@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JustineLo/P3/issues"
   },
-  "homepage": "https://github.com/JustineLo/P3#readme"
+  "homepage": "https://github.com/JustineLo/P3#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }

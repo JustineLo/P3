@@ -1,5 +1,12 @@
-h1 {
-  color: #9356DC;
+html {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
