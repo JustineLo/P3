@@ -9,4 +9,14 @@ html {
   box-sizing: inherit;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  height: 62px;
+}
+header img {
+  width: 161px;
+  margin: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
