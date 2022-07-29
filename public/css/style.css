@@ -29,6 +29,7 @@ header img {
 
 .location {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -40,8 +41,9 @@ header img {
 .presentation {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 0;
   height: 287px;
   background-color: #f6f6f6;
   padding: 0 15%;
