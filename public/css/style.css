@@ -9,14 +9,32 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: center;
   height: 62px;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 5px #cccccc;
+  position: relative;
+  z-index: 10;
 }
 header img {
   width: 161px;
   margin: auto;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
+  background-color: #eaeaea;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

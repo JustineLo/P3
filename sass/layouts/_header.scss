@@ -2,6 +2,10 @@ header {
     display: flex;
     justify-content: center;
     height: 62px;
+    background-color: $bg-default;
+    box-shadow: 0 3px 5px darken($bg-default, 20%);
+    position: relative;
+    z-index: 10;
 
     img {
         width: 161px;
