@@ -9,10 +9,10 @@
     @include flex ($direction: column);
     height: 287px;
     background-color: $bg-section;
-    padding: 0 15%;
     text-align: center;
 
     h2 {
+        padding: 0 15%;
         font-weight: 900;
     }
 

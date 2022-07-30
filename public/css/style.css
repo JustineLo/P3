@@ -46,10 +46,10 @@ header img {
   gap: 0;
   height: 287px;
   background-color: #f6f6f6;
-  padding: 0 15%;
   text-align: center;
 }
 .presentation h2 {
+  padding: 0 15%;
   font-weight: 900;
 }
 .presentation h3 {
