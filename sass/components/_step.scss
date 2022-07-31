@@ -1,0 +1,30 @@
+.etape {
+    @include flex($justify: start, $gap: 5%);
+    width: 100%;
+
+    .etape-numero {
+        @include flex();
+        background-color: $color-primary;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        color: white;
+        z-index: 2;
+    }
+
+    .etape-content {
+        @include flex($justify: start, $gap: 5%);
+        background-color: $bg-section;
+        border-radius: 20px;
+        margin-left: -10%;
+        padding-left: 10%;
+        width: 95%;
+        height: 70px;
+        font-size: 110%;
+        font-weight: bold;
+    }
+
+    span {
+        white-space: nowrap;
+    }
+}

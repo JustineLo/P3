@@ -22,3 +22,11 @@
         margin: 0;
     }
 }
+
+.fonctionnement {
+    margin: 55px 20px;
+
+    .etapes {
+        @include flex($direction: column, $align: start, $gap: 22px);
+    }
+}
