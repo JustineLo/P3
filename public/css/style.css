@@ -33,9 +33,12 @@ body {
   justify-content: start;
   align-items: center;
   gap: 5%;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  position: relative;
   width: 100%;
 }
-.etape .etape-numero {
+.etape .etape__numero {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -46,23 +49,22 @@ body {
   width: 30px;
   height: 30px;
   color: white;
+  position: absolute;
+  transform: translateX(-50%);
   z-index: 2;
 }
-.etape .etape-content {
+.etape .etape__content {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
   gap: 5%;
-  background-color: #f6f6f6;
-  border-radius: 20px;
-  margin-left: -10%;
+  margin-left: 20px;
   padding-left: 10%;
   width: 95%;
   height: 70px;
   font-size: 110%;
   font-weight: bold;
-  box-shadow: 3px 5px 15px #dddddd;
 }
 .etape span {
   white-space: nowrap;
