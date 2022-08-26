@@ -5,7 +5,7 @@
     position: relative;
     width: 100%;
 
-    .etape__numero {
+    &__numero {
         @include flex();
         background-color: $color-primary;
         border-radius: 50%;
@@ -17,9 +17,9 @@
         z-index: 2;
     }
 
-    .etape__content {
+    &__content {
         @include flex($justify: start, $gap: 5%);
-        // background-color: $bg-section;
+        // background-color: $bg-se ction;
         // border-radius: 20px;
         margin-left: 20px;
         padding-left: 10%;

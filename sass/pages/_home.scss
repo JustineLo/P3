@@ -30,3 +30,9 @@
         @include flex($direction: column, $align: start, $gap: 22px);
     }
 }
+
+.restaurants {
+    @include flex ($direction: column, $align: start, $gap: 25px);
+    background-color: $bg-section;
+    padding: 55px 20px;
+}
