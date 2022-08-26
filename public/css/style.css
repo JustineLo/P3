@@ -124,6 +124,33 @@ header img {
   margin: auto;
 }
 
+footer {
+  background-color: #353535;
+  padding: 5% 10%;
+}
+footer img {
+  margin: 10px 0;
+}
+footer .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 8px;
+}
+footer .links link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  color: white;
+}
+footer .links a {
+  color: white;
+  text-decoration: none;
+}
+
 .location {
   display: flex;
   flex-direction: row;

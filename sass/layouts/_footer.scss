@@ -1,0 +1,22 @@
+footer {
+    background-color: $bg-footer;
+    padding: 5% 10%;
+
+    img {
+        margin: 10px 0;
+    }
+
+    .links {
+        @include flex($direction: column, $align: start, $gap: 8px);
+
+        link {
+            @include flex($gap: 3px);
+            color: white;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
