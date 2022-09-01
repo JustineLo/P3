@@ -1,5 +1,5 @@
 .card-restaurant {
-
+    position: static;
     background-color: white;
     width: 335px;
     height: 250px;
@@ -22,7 +22,8 @@
         padding: 6px 12px;
         border-radius: 2px;
         position: absolute;
-        right: 40px;
+        left: 250px;
+    
 
     }
 

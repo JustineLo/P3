@@ -28,6 +28,7 @@ body {
 }
 
 .card-restaurant {
+  position: static;
   background-color: white;
   width: 335px;
   height: 250px;
@@ -49,7 +50,7 @@ body {
   padding: 6px 12px;
   border-radius: 2px;
   position: absolute;
-  right: 40px;
+  left: 250px;
 }
 .card-restaurant__infos {
   display: flex;
@@ -145,6 +146,12 @@ footer .links link {
   align-items: center;
   gap: 3px;
   color: white;
+}
+footer .links .fa-solid {
+  color: white;
+}
+footer .links i {
+  width: 20px;
 }
 footer .links a {
   color: white;

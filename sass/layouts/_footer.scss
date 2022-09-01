@@ -12,6 +12,16 @@ footer {
         link {
             @include flex($gap: 3px);
             color: white;
+
+            
+        }
+
+        .fa-solid {
+            color: white;
+        }
+
+        i {
+            width: 20px;
         }
 
         a {
