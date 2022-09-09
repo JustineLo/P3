@@ -1,7 +1,7 @@
 .card-restaurant {
-    position: static;
-    background-color: white;
-    width: 335px;
+    position: relative;
+    background-color: $bg-default;
+    width: 95%;
     height: 250px;
     border-radius: 15px;
     overflow: hidden;
@@ -22,9 +22,8 @@
         padding: 6px 12px;
         border-radius: 2px;
         position: absolute;
-        left: 250px;
-    
-
+        right: 20px;
+        top: 20px;
     }
 
     &__infos {
