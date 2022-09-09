@@ -21,9 +21,9 @@
 
     .content-section {
 
-        .section-title {
-
+        &__title {
             @include flex ($direction: column, $align: start);
+            margin: 20px 0;
 
             h3 {
                 text-transform: uppercase;
@@ -38,7 +38,34 @@
             }
         }
 
+        &__plats {
+            @include flex ($direction: column, $align: none, $gap: 15px);
+        }
+
+        .plat {
+            @include flex ($justify: space-between, $align: end);
+            background-color: $bg-default;
+            border-radius: 15px;
+            padding: 15px;
+
+            &__texte {
+                @include flex ($direction: column, $align: start, $gap: 5px);
+
+                h3 {
+                    margin: 0;
+                    font-weight: bold;
+                }
+
+                p {
+                    margin: 0;
+                    font-weight: lighter;
+                }
+            }
+
+            &__prix {
+                font-weight: bold;
+            }
+        }
+
     }
-
-
 }
