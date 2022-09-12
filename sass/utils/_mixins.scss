@@ -5,3 +5,27 @@
     align-items: $align;
     gap: $gap;
 }
+
+$breakpoints: (
+    mobile: 480px,
+    tablette: 768px,
+    desktop: 992px,
+);
+
+@mixin tablette {
+    @media (min-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+
+@mixin fullhd {
+    @media (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

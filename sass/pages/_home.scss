@@ -29,6 +29,15 @@
     .etapes {
         @include flex($direction: column, $align: start, $gap: 22px);
     }
+
+    @include desktop {
+        margin: 55px 30%;
+
+        h2 {
+            text-align: center;
+            margin: 40px;
+        }
+    }
 }
 
 .restaurants {
@@ -38,5 +47,14 @@
 
     h2 {
         width: 100%;
+    }
+
+    @include desktop {
+
+        h2 {
+            text-align: center;
+            margin: 40px;
+        }
+
     }
 }

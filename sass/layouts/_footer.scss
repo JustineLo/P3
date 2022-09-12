@@ -13,7 +13,7 @@ footer {
             @include flex($gap: 3px);
             color: white;
 
-            
+
         }
 
         .fa-solid {
@@ -27,6 +27,14 @@ footer {
         a {
             color: white;
             text-decoration: none;
+        }
+    }
+
+    @include tablette {
+        @include flex($direction: column, $align: center);
+
+        .links {
+            @include flex($direction: column, $align: center, $gap: 8px);
         }
     }
 }
