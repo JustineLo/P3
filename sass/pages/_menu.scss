@@ -1,8 +1,9 @@
 .menu-hero {
     height: 260px;
     background-image: url("../../public/images/restaurants/restaurant1.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .menu-content {
@@ -18,10 +19,18 @@
         h1 {
             font-family: $font-heading;
         }
+
+        @include tablette {
+            width: 100%;
+        }
     }
 
     .content-section {
         margin: 10px 0;
+
+        @include tablette {
+            width: 80%;
+        }
 
         &__title {
             @include flex ($direction: column, $align: start);
@@ -37,6 +46,10 @@
                 width: 40px;
                 border: 2px solid $color-tertiary;
                 margin: 0;
+            }
+
+            @include tablette {
+                align-items: center;
             }
         }
 
