@@ -28,10 +28,6 @@
     .content-section {
         margin: 10px 0;
 
-        @include tablette {
-            width: 80%;
-        }
-
         &__title {
             @include flex ($direction: column, $align: start);
             margin: 20px 0;
@@ -87,6 +83,10 @@
             &__prix {
                 font-weight: bold;
             }
+        }
+
+        @include tablette {
+            width: 80%;
         }
     }
 

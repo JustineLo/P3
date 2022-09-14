@@ -19,7 +19,7 @@
 
     &__content {
         @include flex($justify: start, $gap: 5%);
-        // background-color: $bg-se ction;
+        // background-color: $bg-section;
         // border-radius: 20px;
         margin-left: 20px;
         padding-left: 10%;
@@ -33,4 +33,13 @@
     span {
         white-space: nowrap;
     }
+}
+
+.etape:hover {
+
+
+    i {
+        color: $color-primary;
+    }
+
 }
