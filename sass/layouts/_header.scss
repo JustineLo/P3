@@ -3,9 +3,10 @@ header {
     padding: auto 30px;
     height: 62px;
     background-color: $bg-default;
-    box-shadow: 0 3px 5px darken($bg-default, 20%);
     position: relative;
     z-index: 10;
+    @include shadow($x: 3px, $y: 5px, $opacity: 20%);
+
 
     .fa-arrow-left {
         font-size: 20px;

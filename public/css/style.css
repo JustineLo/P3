@@ -30,7 +30,6 @@ a {
   color: white;
   font-size: 18px;
 }
-
 .card-restaurant {
   position: relative;
   background-color: #FFFFFF;
@@ -149,9 +148,9 @@ header {
   padding: auto 30px;
   height: 62px;
   background-color: #FFFFFF;
-  box-shadow: 0 3px 5px #cccccc;
   position: relative;
   z-index: 10;
+  box-shadow: 3px 5px 5px #cccccc;
 }
 header .fa-arrow-left {
   font-size: 20px;
