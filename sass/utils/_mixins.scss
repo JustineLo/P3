@@ -5,3 +5,7 @@
     align-items: $align;
     gap: $gap;
 }
+
+@mixin shadow($x: 5px, $y: 5px, $blur: 5px, $opacity: 10%) {
+    box-shadow: $x $y $blur darken($bg-default, $opacity);
+}
