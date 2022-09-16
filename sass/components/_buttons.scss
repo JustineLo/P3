@@ -10,22 +10,14 @@
     cursor: pointer;
     position: relative;
     z-index: 100;
-
-    &:after {
-        background-image: linear-gradient(to left top, red, $color-secondary);
-        display: block;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        width: 100%;
-        z-index: -100;
-        transition: opacity 0.4s;
-        -webkit-text-fill-color: transparent;
-    }
+    @include shadow();
+    transition: box-shadow ease-in-out 0.3s;
 
     &:hover {
+
+        background-image: linear-gradient(to left top, lighten($color-primary, 10%), $color-secondary);
+        @include shadow($y: 7px, $blur: 10px, $opacity: 20%);
+
         &:after {
             opacity: 1;
         }
