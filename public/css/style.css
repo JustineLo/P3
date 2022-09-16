@@ -11,6 +11,7 @@ html {
 
 body {
   margin: 0;
+  height: auto;
 }
 
 a {
@@ -259,6 +260,62 @@ footer .links a {
   }
 }
 
+.loading-spinner {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  animation: displayLoader 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes displayLoader {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 100%;
+  }
+  99% {
+    margin-top: 0px;
+  }
+  100% {
+    opacity: 0;
+    margin-top: -300px;
+  }
+}
+.loading-spinner i {
+  font-size: 50px;
+  animation: loading 1s ease-in-out infinite;
+  color: #9356DC;
+  margin-top: 300px;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.home-content {
+  opacity: 0;
+  animation: 2s displayHome;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes displayHome {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 .location {
   display: flex;
   flex-direction: row;
@@ -360,6 +417,9 @@ footer .links a {
 }
 .menu-content .content-heading h1 {
   font-family: "Shrikhand";
+}
+.menu-content .content-heading i {
+  font-size: 30px;
 }
 @media (min-width: 480px) {
   .menu-content .content-heading {
@@ -525,6 +585,9 @@ footer .links a {
   font-size: 25px;
   transform: rotate(0);
   transition: transform 0.8s;
+}
+.menu-content .content-section .plat:hover {
+  cursor: pointer;
 }
 .menu-content .content-section .plat:hover .plat__check {
   width: 30%;

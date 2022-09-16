@@ -21,6 +21,10 @@
             font-family: $font-heading;
         }
 
+        i {
+            font-size: 30px;
+        }
+
         @include tablette {
             width: 100%;
         }
@@ -126,6 +130,8 @@
         }
 
         .plat:hover {
+            cursor: pointer;
+
             .plat__check {
                 width: 30%;
                 opacity: 1;

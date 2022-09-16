@@ -551,6 +551,9 @@ footer .links a {
   transform: rotate(0);
   transition: transform 0.8s;
 }
+.menu-content .content-section .plat:hover {
+  cursor: pointer;
+}
 .menu-content .content-section .plat:hover .plat__check {
   width: 30%;
   opacity: 1;

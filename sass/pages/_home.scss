@@ -1,3 +1,68 @@
+.loading-spinner {
+    height: 300px;
+    @include flex();
+    animation: displayLoader 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+    @keyframes displayLoader {
+        0% {
+            opacity: 0;
+        }
+
+        80% {
+            opacity: 100%;
+        }
+
+        99% {
+            margin-top: 0px;
+        }
+
+        100% {
+            opacity: 0;
+            margin-top: -300px;
+        }
+    }
+
+    i {
+        font-size: 50px;
+        animation: loading 1s ease-in-out infinite;
+        color: $color-primary;
+
+        margin-top: 300px;
+
+        @keyframes loading {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+    }
+
+}
+
+.home-content {
+    opacity: 0;
+    animation: 2s displayHome;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+    @keyframes displayHome {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+}
+
 .location {
     @include flex ($gap: 15px);
     height: 50px;
