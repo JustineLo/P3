@@ -92,7 +92,7 @@ a:visited {
 }
 .card-restaurant__infos p {
   margin: 0;
-  font-weight: light;
+  font-weight: lighter;
 }
 @media (min-width: 768px) {
   .card-restaurant__infos {
@@ -193,7 +193,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 0;
-  padding: auto 30px;
+  padding: 0 30px;
   height: 62px;
   background-color: #FFFFFF;
   position: relative;
@@ -383,6 +383,13 @@ footer .links a {
   width: 100%;
 }
 @media (min-width: 768px) {
+  .restaurants a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
   .restaurants h2 {
     text-align: center;
     margin: 40px;

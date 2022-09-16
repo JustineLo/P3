@@ -119,6 +119,9 @@
     }
 
     @include desktop {
+        a {
+            @include flex();
+        }
 
         h2 {
             text-align: center;
