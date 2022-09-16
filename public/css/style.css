@@ -23,13 +23,33 @@ a {
   height: 50px;
   border-radius: 55px;
   border: none;
-  background: linear-gradient(to left top, #9356DC, #FF79DA);
+  background-size: 100%;
+  background-image: linear-gradient(to left top, #9356DC, #FF79DA);
   cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+.btn-cta:after {
+  background-image: linear-gradient(to left top, red, #FF79DA);
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+  transition: opacity 0.4s;
+  -webkit-text-fill-color: transparent;
+}
+.btn-cta:hover:after {
+  opacity: 1;
 }
 .btn-cta span {
   color: white;
   font-size: 18px;
 }
+
 .card-restaurant {
   position: relative;
   background-color: #FFFFFF;
@@ -90,6 +110,15 @@ a {
   .card-restaurant {
     width: 50%;
   }
+}
+.card-restaurant .coeur {
+  position: relative;
+}
+.card-restaurant i {
+  z-index: 1;
+}
+.card-restaurant i:hover {
+  color: red;
 }
 
 .etape {
@@ -349,6 +378,214 @@ footer .links a {
   gap: 15px;
   width: 95%;
 }
+.menu-content .content-section__plats:nth-child(0) .plat:nth-child(0) {
+  animation: fadein 2s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(0) .plat:nth-child(1) {
+  animation: fadein 2s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(0) .plat:nth-child(2) {
+  animation: fadein 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(0) .plat:nth-child(3) {
+  animation: fadein 2s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(1) .plat:nth-child(0) {
+  animation: fadein 2s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(1) .plat:nth-child(1) {
+  animation: fadein 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(1) .plat:nth-child(2) {
+  animation: fadein 2s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(1) .plat:nth-child(3) {
+  animation: fadein 2s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(2) .plat:nth-child(0) {
+  animation: fadein 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(2) .plat:nth-child(1) {
+  animation: fadein 2s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(2) .plat:nth-child(2) {
+  animation: fadein 2s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(2) .plat:nth-child(3) {
+  animation: fadein 2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(3) .plat:nth-child(0) {
+  animation: fadein 2s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(3) .plat:nth-child(1) {
+  animation: fadein 2s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(3) .plat:nth-child(2) {
+  animation: fadein 2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu-content .content-section__plats:nth-child(3) .plat:nth-child(3) {
+  animation: fadein 2s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .menu-content .content-section .plat {
   display: flex;
   flex-direction: row;
@@ -358,6 +595,7 @@ footer .links a {
   background-color: #FFFFFF;
   border-radius: 15px;
   padding: 10px;
+  opacity: 0;
 }
 .menu-content .content-section .plat__texte {
   display: flex;
@@ -366,6 +604,7 @@ footer .links a {
   align-items: start;
   gap: 0;
   width: 85%;
+  transition: width ease-in-out 0.4s;
 }
 .menu-content .content-section .plat__texte h3 {
   margin: 0;
@@ -381,6 +620,29 @@ footer .links a {
 }
 .menu-content .content-section .plat__prix {
   font-weight: bold;
+}
+.menu-content .content-section .plat__check {
+  background-color: #99E2D0;
+  height: 100%;
+  width: 0%;
+  opacity: 0;
+  transition: width ease-in-out 0.4s;
+}
+.menu-content .content-section .plat__check i {
+  color: white;
+  font-size: 25px;
+  transform: rotate(0);
+  transition: transform 1s;
+}
+.menu-content .content-section .plat:hover .plat__texte {
+  width: 65%;
+}
+.menu-content .content-section .plat:hover .plat__check {
+  width: 10%;
+  opacity: 1;
+}
+.menu-content .content-section .plat:hover .plat__check i {
+  transform: rotate(360deg);
 }
 @media (min-width: 480px) {
   .menu-content .content-section {

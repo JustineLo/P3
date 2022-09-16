@@ -52,4 +52,17 @@
     @include desktop {
         width: 50%;
     }
+
+    .coeur {
+        position: relative;
+    }
+
+    i {
+        z-index: 1;
+    }
+
+    i:hover {
+        color: red;
+    }
+
 }

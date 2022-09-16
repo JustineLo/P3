@@ -33,3 +33,19 @@ $breakpoints: (
 @mixin shadow($x: 5px, $y: 5px, $blur: 5px, $opacity: 10%) {
     box-shadow: $x $y $blur darken($bg-default, $opacity);
 }
+
+@mixin fadeinAnimation($delay) {
+    animation: fadein 2s;
+    animation-delay: $delay;
+    animation-fill-mode: forwards;
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}

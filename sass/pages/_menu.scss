@@ -51,7 +51,20 @@
 
         &__plats {
             @include flex ($direction: column, $align: none, $gap: 15px);
-            width: 95%
+            width: 95%;
+
+
+
+        }
+
+        @for $j from 0 through 3 {
+            &__plats:nth-child(#{$j}) {
+                @for $i from 0 through 3 {
+                    .plat:nth-child(#{$i}) {
+                        @include fadeinAnimation(($i + (3+$j)) * 0.1s);
+                    }
+                }
+            }
         }
 
         .plat {
@@ -59,11 +72,13 @@
             background-color: $bg-default;
             border-radius: 15px;
             padding: 10px;
+            opacity: 0;
 
 
             &__texte {
                 @include flex ($direction: column, $align: start);
                 width: 85%;
+                transition: width ease-in-out 0.4s;
 
                 h3 {
                     margin: 0;
@@ -83,12 +98,48 @@
             &__prix {
                 font-weight: bold;
             }
+
+            &__check {
+                background-color: $color-tertiary;
+                height: 100%;
+                width: 0%;
+                opacity: 0;
+
+                transition: width ease-in-out 0.4s;
+
+
+                i {
+                    color: white;
+                    font-size: 25px;
+                    transform: rotate(0);
+                    transition: transform 1s;
+                }
+            }
+
+
+        }
+
+        .plat:hover {
+            .plat__texte {
+                width: 65%;
+            }
+
+            .plat__check {
+                width: 10%;
+                opacity: 1;
+
+                i {
+                    transform: rotate(360deg);
+                }
+            }
         }
 
         @include tablette {
             width: 80%;
         }
     }
+
+
 
     button {
         width: 50%;
