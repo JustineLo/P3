@@ -59,7 +59,8 @@ a:visited {
 .card-restaurant img {
   width: 100%;
   height: 70%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 768px) {
   .card-restaurant img {
@@ -71,6 +72,8 @@ a:visited {
   color: #2c9c81;
   font-size: 90%;
   font-weight: bolder;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 6px 12px;
   border-radius: 2px;
@@ -402,9 +405,22 @@ footer .links a {
   width: 100%;
 }
 .menu-content .content-section .plat:nth-child(0) {
-  animation: fadein 2s;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-20%);
+  }
 }
 @keyframes fadein {
   from {
@@ -417,9 +433,12 @@ footer .links a {
   }
 }
 .menu-content .content-section .plat:nth-child(1) {
-  animation: fadein 2s;
-  animation-delay: 0.3s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @keyframes fadein {
   from {
@@ -432,9 +451,12 @@ footer .links a {
   }
 }
 .menu-content .content-section .plat:nth-child(2) {
-  animation: fadein 2s;
-  animation-delay: 0.6s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @keyframes fadein {
   from {
@@ -447,9 +469,12 @@ footer .links a {
   }
 }
 .menu-content .content-section .plat:nth-child(3) {
-  animation: fadein 2s;
-  animation-delay: 0.9s;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 @keyframes fadein {
   from {
@@ -541,6 +566,4 @@ footer .links a {
 .menu-content button {
   width: 50%;
   margin: 50px 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

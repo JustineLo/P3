@@ -12,6 +12,7 @@
     border-radius: 30px 30px 0 0;
     margin-top: -50px;
     padding: 15px 20px;
+    width: 100%;
 
     .content-heading {
         @include flex ($gap: 5%);
@@ -27,10 +28,11 @@
 
     .content-section {
         margin: 10px 0;
+        width: 100%;
 
         &__title {
             @include flex ($direction: column, $align: start);
-            margin: 20px 0;
+            padding: 30px 0;
 
             h3 {
                 text-transform: uppercase;
@@ -50,17 +52,14 @@
         }
 
         &__plats {
-            @include flex ($direction: column, $align: none, $gap: 15px);
-            width: 95%;
+            @include flex ($direction: column, $gap: 15px);
+            width: 100%;
         }
 
-        @for $j from 0 through 3 {
-            &__plats:nth-child(#{$j}) {
-                @for $i from 0 through 3 {
-                    .plat:nth-child(#{$i}) {
-                        @include fadeinAnimation(($i + (3+$j)) * 0.3s);
-                    }
-                }
+        @for $i from 0 through 3 {
+            .plat:nth-child(#{$i}) {
+                @include fadeinAnimation($i * 0.3s);
+                //@include translateUpAnimation($i * 0.3s);
             }
         }
 
@@ -70,18 +69,25 @@
             border-radius: 15px;
             opacity: 0;
             overflow: hidden;
-
-            height: 80px;
+            width: 100%;
+            height: 65px;
+            @include shadow();
 
             &__texte {
                 @include flex ($direction: column, $align: start);
                 width: 85%;
                 transition: width ease-in-out 0.4s;
-                padding: 10px;
+                padding: 10px 0 10px 20px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
 
                 h3 {
                     margin: 0;
                     font-weight: bold;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100%;
                 }
 
                 span {
@@ -96,21 +102,23 @@
 
             &__prix {
                 font-weight: bold;
+                padding: 10px 20px;
+                text-align: start;
             }
 
             &__check {
+                @include flex();
                 background-color: $color-tertiary;
                 height: 100%;
                 width: 0%;
                 align-self: center;
                 transition: width ease-in-out 0.4s;
 
-
                 i {
                     color: white;
                     font-size: 25px;
                     transform: rotate(0);
-                    transition: transform 1s;
+                    transition: transform 0.8s;
                 }
             }
 
@@ -118,12 +126,8 @@
         }
 
         .plat:hover {
-            .plat__texte {
-                width: 65%;
-            }
-
             .plat__check {
-                width: 10%;
+                width: 30%;
                 opacity: 1;
 
                 i {
