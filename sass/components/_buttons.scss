@@ -6,7 +6,7 @@
     border: none;
 
     background-size: 100%;
-    background-image: linear-gradient(to left top, $color-primary, $color-secondary);
+    background-image: $bg-gradient;
     cursor: pointer;
     position: relative;
     z-index: 100;
@@ -14,9 +14,8 @@
     transition: box-shadow ease-in-out 0.3s;
 
     &:hover {
-
         background-image: linear-gradient(to left top, lighten($color-primary, 10%), $color-secondary);
-        @include shadow($y: 7px, $blur: 10px, $opacity: 20%);
+        @include shadow($x: 3px, $y: 7px, $blur: 8px, $opacity: 20%);
 
         &:after {
             opacity: 1;

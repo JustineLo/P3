@@ -52,16 +52,13 @@
         &__plats {
             @include flex ($direction: column, $align: none, $gap: 15px);
             width: 95%;
-
-
-
         }
 
         @for $j from 0 through 3 {
             &__plats:nth-child(#{$j}) {
                 @for $i from 0 through 3 {
                     .plat:nth-child(#{$i}) {
-                        @include fadeinAnimation(($i + (3+$j)) * 0.1s);
+                        @include fadeinAnimation(($i + (3+$j)) * 0.3s);
                     }
                 }
             }
@@ -71,14 +68,16 @@
             @include flex ($justify: space-between, $align: end);
             background-color: $bg-default;
             border-radius: 15px;
-            padding: 10px;
             opacity: 0;
+            overflow: hidden;
 
+            height: 80px;
 
             &__texte {
                 @include flex ($direction: column, $align: start);
                 width: 85%;
                 transition: width ease-in-out 0.4s;
+                padding: 10px;
 
                 h3 {
                     margin: 0;
@@ -103,8 +102,7 @@
                 background-color: $color-tertiary;
                 height: 100%;
                 width: 0%;
-                opacity: 0;
-
+                align-self: center;
                 transition: width ease-in-out 0.4s;
 
 

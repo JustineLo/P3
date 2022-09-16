@@ -4,6 +4,8 @@
     background-color: $bg-section;
     position: relative;
     width: 100%;
+    box-shadow: 3px 5px 15px darken($bg-section, 10%);
+    transition: background-color ease-in-out 0.2s;
 
     &__numero {
         @include flex();
@@ -19,15 +21,13 @@
 
     &__content {
         @include flex($justify: start, $gap: 5%);
-        // background-color: $bg-section;
-        // border-radius: 20px;
         margin-left: 20px;
         padding-left: 10%;
         width: 95%;
         height: 70px;
         font-size: 110%;
         font-weight: bold;
-        // box-shadow: 3px 5px 15px darken($bg-section, 10%);
+
     }
 
     span {
@@ -36,6 +36,8 @@
 }
 
 .etape:hover {
+    background-color: $color-primary-lighten;
+
     i {
         color: $color-primary;
     }
