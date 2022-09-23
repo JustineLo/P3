@@ -16,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:visited {
@@ -205,6 +206,8 @@ header .fa-arrow-left {
 }
 header a {
   margin-left: 5%;
+  position: absolute;
+  right: 90%;
 }
 header img {
   width: 161px;
@@ -414,13 +417,6 @@ footer .links a {
   margin-top: -50px;
   padding: 15px 20px;
   width: 100%;
-}
-.menu-content .content-heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
 }
 .menu-content .content-heading h1 {
   font-family: "Shrikhand";
