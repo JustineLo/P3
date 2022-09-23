@@ -401,9 +401,15 @@ footer .links a {
 
 .menu-hero {
   height: 260px;
-  background-image: url("../../public/images/restaurants/restaurant1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  z-index: -100;
+}
+.menu-hero img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: -100;
 }
 
 .menu-content {
@@ -417,14 +423,16 @@ footer .links a {
   margin-top: -50px;
   padding: 15px 20px;
   width: 100%;
+  z-index: 100;
 }
 .menu-content .content-heading {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  gap: 10%;
+  gap: 15%;
   width: 100%;
+  padding-right: 10%;
 }
 .menu-content .content-heading h1 {
   font-family: "Shrikhand";
@@ -522,6 +530,21 @@ footer .links a {
 .menu-content .content-section .plat:nth-child(3) {
   animation: fadein 2s;
   animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-20%);
+  }
+}
+.menu-content .content-section .plat:nth-child(4) {
+  animation: fadein 2s;
+  animation-delay: 1.2s;
   animation-fill-mode: forwards;
 }
 @keyframes fadein {

@@ -1,9 +1,15 @@
 .menu-hero {
     height: 260px;
-    background-image: url("../../public/images/restaurants/restaurant1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    z-index: -100;
 
+    img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        z-index: -100;
+    }
 }
 
 .menu-content {
@@ -13,10 +19,12 @@
     margin-top: -50px;
     padding: 15px 20px;
     width: 100%;
+    z-index: 100;
 
     .content-heading {
-        @include flex ($justify: start, $gap: 10%);
+        @include flex ($justify: space-between, $gap: 15%);
         width: 100%;
+        padding-right: 10%;
 
         h1 {
             font-family: $font-heading;
@@ -63,7 +71,7 @@
             width: 100%;
         }
 
-        @for $i from 0 through 3 {
+        @for $i from 0 through 4 {
             .plat:nth-child(#{$i}) {
                 @include fadeinAnimation($i * 0.3s);
                 //@include translateUpAnimation($i * 0.3s);
