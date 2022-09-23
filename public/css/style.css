@@ -264,7 +264,7 @@ footer .links a {
 }
 
 .loading-spinner {
-  height: 300px;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -273,6 +273,7 @@ footer .links a {
   animation: displayLoader 3s;
   opacity: 0;
   animation-fill-mode: forwards;
+  position: fixed;
 }
 @keyframes displayLoader {
   0% {
@@ -281,12 +282,8 @@ footer .links a {
   80% {
     opacity: 100%;
   }
-  99% {
-    margin-top: 0px;
-  }
   100% {
     opacity: 0;
-    margin-top: -300px;
   }
 }
 .loading-spinner i {
