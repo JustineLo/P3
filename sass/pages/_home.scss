@@ -1,6 +1,7 @@
 .loading-spinner {
+    @include flex ($align: center, $justify: center);
+    margin-left: 45%;
     height: 100vh;
-    @include flex();
     animation: displayLoader 3s;
     opacity: 0;
     animation-fill-mode: forwards;
