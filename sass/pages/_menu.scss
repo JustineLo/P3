@@ -22,9 +22,9 @@
     z-index: 100;
 
     .content-heading {
-        @include flex ($justify: space-between, $gap: 15%);
+        @include flex ($justify: space-between);
         width: 100%;
-        padding-right: 10%;
+        padding-right: 10px;
 
         h1 {
             font-family: $font-heading;
@@ -38,6 +38,7 @@
         @include tablette {
             width: 100%;
             justify-content: center;
+            gap: 50px;
         }
     }
 
@@ -74,7 +75,6 @@
         @for $i from 0 through 4 {
             .plat:nth-child(#{$i}) {
                 @include fadeinAnimation($i * 0.3s);
-                //@include translateUpAnimation($i * 0.3s);
             }
         }
 

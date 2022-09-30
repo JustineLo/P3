@@ -25,8 +25,7 @@
         font-size: 50px;
         animation: loading 1s ease-in-out infinite;
         color: $color-primary;
-
-        margin-top: 300px;
+        margin-top: 10vh;
 
         @keyframes loading {
             0% {
@@ -37,10 +36,7 @@
                 transform: rotate(360deg);
             }
         }
-
-
     }
-
 }
 
 .home-content {

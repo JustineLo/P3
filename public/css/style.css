@@ -293,7 +293,7 @@ footer .links a {
   font-size: 50px;
   animation: loading 1s ease-in-out infinite;
   color: #9356DC;
-  margin-top: 300px;
+  margin-top: 10vh;
 }
 @keyframes loading {
   0% {
@@ -430,9 +430,9 @@ footer .links a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 15%;
+  gap: 0;
   width: 100%;
-  padding-right: 10%;
+  padding-right: 10px;
 }
 .menu-content .content-heading h1 {
   font-family: "Shrikhand";
@@ -445,6 +445,7 @@ footer .links a {
   .menu-content .content-heading {
     width: 100%;
     justify-content: center;
+    gap: 50px;
   }
 }
 .menu-content .content-section {
